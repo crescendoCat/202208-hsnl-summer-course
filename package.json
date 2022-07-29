@@ -1,0 +1,19 @@
+{
+  "name": "202208-hsnl-summer-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crescendoCat/202208-hsnl-summer-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crescendoCat/202208-hsnl-summer-course/issues"
+  },
+  "homepage": "https://github.com/crescendoCat/202208-hsnl-summer-course#readme"
+}

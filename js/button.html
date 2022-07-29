@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dynamic Buttons</title>
+	<!-- jquery -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<style>
+		body {
+			display: flex;
+			flex-direction: row;
+		}
+		.block {
+			width: 33.333333%;
+		}
+	</style>
+	<script>
+		window.addEventListener("load", () => {
+			let textCount = 1;
+			document
+				.getElementById('add-text-btn-dom')
+				.addEventListener("click", () => {
+				let root = document.getElementById("text-home")
+				let text = document.createElement("p")
+				text.innerText = `text-dom-${textCount}`
+				textCount += 1;
+				root.appendChild(text)
+			});
+		})
+	</script>
+	<script>
+		$(window).ready(()=> {
+			let textCount = 1;
+			$("#add-text-btn-jquery").on("click", () => {
+				$("#text-home").append(`<p>text-jquery-${textCount}</p>`)
+				textCount+=1;
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="block">
+		<button id="add-text-btn-dom">Add Text Using DOM</button>
+		<div id="text-home-dom">
+		</div>
+	</div>
+	<div class="block">
+		<button id="add-text-btn-jquery">Add Text Using jQuery</button>
+		<div id="text-home-jquery">
+		</div>
+	</div>
+	<div class="block" id="root">
+	</div>
+</body>
+</html>
