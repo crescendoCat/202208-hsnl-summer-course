@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+      blockquote {
+        position: relative;
+        left: 2rem;
+        color:  #7d7d7d;
+      }
+      blockquote::after {
+        content:  '';
+        display: block;
+        position: absolute;
+        width: .5rem;
+        height: 100%;
+        top: 0;
+        left: -2rem;
+        background: #c5c6c6;
+      }
+
+      .splash-img {
+        text-align:  center;
+      }
+      .splash-img img {
+        max-height: 75vh;
+      }
+      .splash-img figcaption {
+        color: #9b9c9b;
+      }
+      .splash-img figcaption a {
+        color: #007bba;
+      }
+
+      footer {
+        background: #e2e2e2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#">Demo Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <div class="container-md">
+    <div class="row">
+      <div class="col-3">
+
+        <nav class="nav flex-column position-sticky top-0 pt-3">
+          <h4>Table of Contents</h4>
+          <a class="nav-link active" aria-current="page" href="#lorem-ipsum">Lorem ipsum dolor sit amet.</a>
+          <a class="nav-link" href="#fusce-ultrices">Fusce ultrices</a>
+          <a class="nav-link" href="#mauris-ornare">Mauris id Ornare</a>
+          <a class="nav-link disabled">Disabled</a>
+        </nav>
+      </div>
+      <div class="col-9">
+        <main>
+          <div class="container-fluid">
+            <div class="row">
+              <figure class="col-12 splash-img">
+                <img src="imgs/yigit-arisoy-7VpuO-43_y0-unsplash.jpg" alt="Splash Image for this article">
+                <figcaption>
+                Photo by <a href="https://unsplash.com/@yigitarisoy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yigit ARISOY</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+                </figcaption>
+  
+              </figure>
+            </div>
+          <div class="row">
+            <h1 id="lorem-ipsum">Lorem ipsum dolor sit amet. </h1>
+            <blockquote>
+Vestibulum nec erat ut dui ultricies volutpat id et ipsum. Sed a purus laoreet, convallis eros ac, maximus ante. Cras elementum at tortor lobortis semper. Integer elementum nibh auctor elit dignissim, at sollicitudin elit elementum. Aliquam eget massa dolor. Etiam volutpat dictum odio, a dapibus augue varius at. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ex dolor, semper quis ipsum eget, semper viverra felis.</blockquote >
+          </div>
+          <div class="row">
+            <h2 id="consectetur-adipiscing">Consectetur adipiscing elit.</h2>
+            <p>
+Pellentesque rutrum diam enim, id maximus dui iaculis sit amet. Proin malesuada, tellus at placerat sodales, tortor lectus sollicitudin mauris, nec convallis magna nunc id sapien. Phasellus porta cursus mi sed lacinia. Maecenas nec libero sodales, cursus urna a, ullamcorper sem. Praesent vel metus eu sem blandit interdum nec lobortis enim. Donec nec interdum arcu. Nam hendrerit ac dui sit amet laoreet. Proin accumsan urna sed dui consequat blandit. Curabitur purus ex, aliquet quis venenatis ac, fermentum non dolor. Suspendisse ornare, sem auctor imperdiet pulvinar, mi lectus venenatis tortor, ut mollis sem nulla ut nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="row">
+            <h2 id="fusce-ultrices">Fusce ultrices</h2>
+          </div>
+          <div class="row">
+            
+            <div class="col-5">
+              <p>
+Odio sit amet vestibulum eleifend, massa est feugiat elit, id consectetur magna ex ac erat. Mauris libero risus, accumsan sed ante nec, posuere semper velit. Curabitur mi ex, aliquet sed commodo in, posuere a massa. Nulla facilisi. Etiam sollicitudin mi eget imperdiet egestas. Vivamus ac ligula tempor, vehicula quam dignissim, dapibus dui. Mauris a velit auctor, rutrum ligula ac, cursus lectus. Praesent consectetur nisl vel porttitor posuere. Aliquam erat volutpat. Duis et ex euismod, ultrices enim vel, fringilla ante. Sed commodo elementum ex nec venenatis. Pellentesque posuere consectetur purus, vel pellentesque erat.
+              </p>
+            </div>
+            <div class="col-7">
+              <figure class="splash-img">
+                <img src="imgs/jonathan-kemper-mdIPOSLIHbk-unsplash.jpg" alt="Splash Image for this article">
+                <figcaption>
+                Photo by <a href="https://unsplash.com/@jupp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Kemper</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+                </figcaption>
+  
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <h2 id="mauris-ornare">Mauris id ornare magna. </h2>
+            <p>
+Quisque maximus viverra mauris vel tristique. Morbi iaculis vulputate lacus a convallis. Maecenas sagittis convallis semper. Maecenas sagittis blandit lorem id ultrices. Ut neque velit, gravida ac tellus in, varius vehicula arcu. Nulla aliquam vehicula felis, eget tincidunt ante scelerisque at.
+            </p>
+            <p>
+Donec efficitur orci orci, vitae varius orci viverra vitae. Sed euismod ligula id purus ultrices tincidunt. Etiam dolor est, feugiat faucibus sodales non, euismod sed erat. Morbi faucibus dapibus aliquam. Proin semper, libero et iaculis viverra, diam nisi interdum arcu, non elementum libero velit ac elit. Nullam maximus consequat enim vitae consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In viverra bibendum dolor quis cursus. Morbi quis imperdiet libero. Sed dapibus erat eu eros gravida, quis laoreet dui feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam euismod congue mollis.
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+
+  </div>
+  <footer class="container-fluid py-1 position-sticky bottom-0">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        2022 @copyright HSNL summer course, all rights reserved.
+      </div>
+      <div class="col-4">
+        Contact: c.crescendo.cat@gmail.com
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>

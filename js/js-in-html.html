@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js in HTML</title>
+	<script>
+		window.addEventListener("load", function() {
+			document.getElementById("say-hi").addEventListener("click", function(){alert("Hi")})
+		})
+	</script>
+	<script src="say-hi.js"></script>
+</head>
+<body>
+	<button onclick="alert('Hi')">Say Hi(inline)</button>
+	<button id="say-hi">Say Hi(script)</button>
+	<button id="say-hi-2">Say Hi(outer source)</button>
+</body>
+</html>

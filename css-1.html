@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Test</title>
+	
+</head>
+<body>
+	<style>
+		#test-block-1 div ~ h2 {
+			background: lightblue;
+		}
+		#test-block-1 div + h2 {
+			background: lightgrey;
+		}
+	</style>
+	<div id="test-block-1">
+		<h1>Test block 1</h1>
+		<h2>Not a neighbor nor sibling of anyone</h2>
+		<div>div 1</div>
+		<h2>Neighbor of div 1</h2>
+		<div>div 2</div>
+
+		<a>I'm splitter</a>
+		<h2>Neighbor of hr not div 2, but still a sibling of div</h2>
+		<div>div 3
+	</div>
+
+	<hr />
+	<style>
+		#test-block-2 div {
+			background: grey;
+			margin-top: .5rem;
+		}
+		#test-block-2 div a {
+			color: lightgrey;
+		}
+		#test-block-2 div > a {
+			color: lightblue;
+		}
+		
+	</style>
+	<div id="test-block-2">
+		<h1>Test block 2</h1>
+		<a href="#">a out of div</a>
+		<div>
+			div 1
+			<a href="#">a in div 1</a>
+		</div>
+		<div>
+			div 2
+			<h2><a href="#">a in</a> h2 in div 2</h2>
+		</div>
+	</div>
+	<style>
+		#test-block-3 #a {
+			margin: 10px;
+		}
+		#test-block-3 #b {
+			margin: 10px;
+		}
+		#test-block-3 div {
+			background: lightblue;
+		}
+
+		#test-block-3 #c {
+			padding: 10px;
+		}
+		#test-block-3 #d {
+			padding: 10px;
+		}
+	</style>
+	<div id="test-block-3">
+		<h1>Test block 3</h1>
+		<div id="a">
+			div #a
+		</div>
+		<div id="b">
+			div #b
+		</div>
+		<div id="c">
+			div #c
+		</div>
+		<div id="d">
+			div #d
+		</div>
+	</div>
+	<style>
+		#test-block-4 .overflow {
+			width: 4rem;
+			margin: .5rem;
+			padding: 1rem;
+			background: lightblue;
+		}
+		#test-block-4 .overflow div {
+			height: max-content;
+			width: max-content;
+			background: pink;
+		}
+
+		#test-block-4 .overflow .w-100 {
+			width: 100%;
+		}
+
+		#test-block-4 .overflow.scroll {
+			overflow: scroll;
+		}
+		#test-block-4 .overflow.auto-scroll {
+			overflow: auto;
+		}
+
+	</style>
+	<div id="test-block-4">
+		<h1>Test block 4</h1>
+		<div class="overflow">
+			<div>我突破天際了</div>
+		</div>
+
+		<div class="overflow">
+			<div class="w-100">我被限制天際了</div>
+		</div>
+
+		<div class="overflow scroll">
+			<div>我突破天際了</div>
+		</div>
+		<div class="overflow auto-scroll">
+			<div>Scroll好像沒這麼醜了</div>
+		</div>
+	</div>
+
+	<style>
+		#test-block-5 {
+			position: relative;
+		}
+
+		#test-block-5 .position {
+
+			width: 4rem;
+			margin: .5rem;
+			padding: 1rem;
+			background: #add8e6e5;
+		}
+
+		#test-block-5 .position.relative {
+			position: relative;
+			top: 5px;
+			right: 5px;
+		}
+
+		#test-block-5 .position.absolute {
+			position: absolute;
+			top: 5px;
+			right: 5px;
+		}
+		#test-block-5 .position.sticky {
+			position: sticky;
+			top: 5px;
+			right: 5px;
+		}
+		#test-block-5 .position.fixed {
+			position: fixed;
+			top: 5px;
+			right: 5px;
+
+		}
+
+	</style>
+	<div id="test-block-5">
+		<h1>Test block 5</h1>
+		<div class="position">
+			<div>static</div>
+		</div>
+		<div class="position relative">
+			<div>relative</div>
+		</div>
+		<div class="position absolute">
+			<div>absolute</div>
+		</div>
+		<div class="position sticky">
+			<div>sticky</div>
+		</div>
+		<div class="position fixed">
+			<div>fixed</div>
+		</div>
+</body>
+</html>

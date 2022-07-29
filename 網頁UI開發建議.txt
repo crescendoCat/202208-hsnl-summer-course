@@ -1,0 +1,66 @@
+icon (以下皆為可商用、且不用註明出處) (建議用icon前還是可以先設計一下顏色跟組合)
+
+Taiwan Icon Font
+https://www.twicon.page/index.html
+=> 很可愛、很精緻、但實用性沒有很高(?
+
+Fontawesome
+https://fontawesome.com
+=> 最常用的
+
+Iconmonstr
+https://iconmonstr.com/
+=> 選擇較少、但是還是可以參考參考
+
+
+
+
+font
+
+Google fonts
+https://fonts.google.com/
+=>最簡單好用的，我做的新頁面都有用google font
+
+
+
+photo (目前智農頁面我是沒有用到啦，但如果需要可以用的) (都可以商用且不用註明出處)
+
+Unsplash
+https://unsplash.com/
+
+Pexels
+https://www.pexels.com/zh-tw/license/
+
+
+
+
+color (配色真的很重要QAQ)
+
+Coolors
+https://coolors.co/
+=> 要配色前可以在上面刷刷看好看的顏色，都有色碼可以直接複製，按空白鍵可以刷顏色，看到喜歡的可以鎖起來然後繼續刷其他顏色，裡面的顏色都蠻好看的
+
+
+Symbol
+
+Html symbol
+https://www.htmlsymbols.xyz/
+=> 不一定所有icon都要用真正的icon，有時候用html symbol比較簡單且好調整
+
+
+
+Design
+
+Figma
+https://www.figma.com/
+=> 我常用的，在做頁面前可以先用figma設計，或者要調整icon或設計picture可以用這個，可以輸出svg圖片
+
+
+tutorial
+
+MDN
+https://developer.mozilla.org/en-US/
+
+CSS-Tricks
+https://css-tricks.com/
+=>拜託拜託學一下css 真的不難QAQ，用搜索框輸入要查詢的css style就有很多好看的建議可以用
