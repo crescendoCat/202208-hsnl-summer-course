@@ -3,9 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <title>Practice 2</title>
+  <style>
+    .todo-list-container ul {
+      list-style-type: none;
+      font-size:  1.2em;
+    }
+    .todo-list-container ul li {
+      border-bottom: 1px solid white;
+      transition:  background .3s ease-out;
+      display:  flex;
+      padding: .3rem 0 ;
+    }
+
+    .todo-list-container ul li input[type="checkbox"] {
+      width: .8em;
+
+    }
+    .todo-list-container ul li label{
+      flex: 1;
+      margin-left: .4rem;
+      user-select: none;
+    }
+    .todo-list-container ul li:last-child {
+      border:  none;
+    }
+    .todo-list-container ul li:hover {
+      background: #0002;
+    }
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+      color:  white;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Pretty TODO List</h1>
+  <div class="container-md mt-3">
+    <div class="row justify-content-center text-center">
+      <div class="col">
+        <h1>Pretty TODO List</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 col-md-4 todo-list-container">
+        <ul>
+          <li>
+            <input type="checkbox" name="todo-list-1" id="todo-list-1">
+            <label for="todo-list-1">Todo-list-1</label>
+          </li>
+          <li>
+            <input type="checkbox" name="todo-list-2" id="todo-list-2">
+            <label for="todo-list-2">Todo-list-2</label>
+          </li>
+          <li>
+            <input type="checkbox" name="todo-list-3" id="todo-list-3">
+            <label for="todo-list-3">Todo-list-3</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
